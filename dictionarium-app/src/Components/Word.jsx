@@ -28,6 +28,7 @@ const Word = ({ selectedWord }) => {
       <h3>{definition.word}</h3>
       { <h4>{definition.phonetics.filter((element) => element.hasOwnProperty("text"))[0].text}</h4>}
       {definition.meanings.map(meaning => <MeaningCard meaning={meaning}/>)}
+      <h5>Want to know more about the word '{definition.word}'? <a href={definition.sourceUrls}>Click here!</a></h5>
     </div>
   );
 };

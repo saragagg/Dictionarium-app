@@ -12,6 +12,8 @@ const MeaningCard = ({meaning}) => {
                 </p>
             )
         })}
+        {meaning.synonyms.length > 0? <h5>Synonims: {meaning.synonyms.join(", ")}</h5> : null} 
+        {meaning.antonyms.length > 0? <h5>Antonyms: {meaning.antonyms.join(", ")}</h5> : null}
         
         </div>
     )
