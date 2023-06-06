@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./SearchBar.css";
 
 const SearchBar = ({ setSelectedWord, setShowWord }) => {
   const [error, setError] = useState(false);
@@ -27,7 +26,7 @@ const SearchBar = ({ setSelectedWord, setShowWord }) => {
           onChange={(e) => setChosenWord(e.target.value)}></input>
         <button type="submit">Search</button>
       </form>
-      {error && <h4>Please type a word</h4>}
+      {error && <h4 className="text-red-600/75">Please type a word</h4>}
     </div>
   );
 };
