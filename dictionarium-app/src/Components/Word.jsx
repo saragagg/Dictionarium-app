@@ -1,4 +1,4 @@
-import "./Word.css";
+
 import getWordDefinition from "../api";
 import { useEffect, useState } from "react";
 import MeaningCard from "./MeaningCard";

@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './Components/Header';
 import SearchBar from './Components/SearchBar';
 import HomePage from './Components/HomePage';
@@ -11,7 +10,7 @@ function App() {
   const [showWord, setShowWord] = useState(false)
   
   return (
-    <div className="App">
+    <div className="h-screen bg-sky-50 font-serif grid grid-cols text-center">
         <Header />
         <SearchBar selectedWord={selectedWord} setSelectedWord={setSelectedWord} setShowWord={setShowWord}/>
         {!showWord && <HomePage />}
