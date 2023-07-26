@@ -10,7 +10,7 @@ function App() {
   const [showWord, setShowWord] = useState(false)
   
   return (
-    <div className="bg-sky-50 font-serif text-center">
+    <div className="bg-sky-50 h-full min-h-screen font-serif text-center ">
         <Header />
         <SearchBar selectedWord={selectedWord} setSelectedWord={setSelectedWord} setShowWord={setShowWord}/>
         {!showWord && <HomePage />}
