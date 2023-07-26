@@ -18,7 +18,7 @@ const SearchBar = ({ setSelectedWord, setShowWord }) => {
 
   return (
     <div className="py-2">
-      <div className="drop-shadow-xl bg-sky-100 py-4 mx-20">
+      <div className="drop-shadow-xl bg-sky-100 py-4 mx-1 md:mx-64 ld:mx-90 rounded-md">
         <form onSubmit={handleSubmit}>
           <input
             className="p-2 mr-0.5 rounded-l-lg w-4/6"
@@ -32,7 +32,7 @@ const SearchBar = ({ setSelectedWord, setShowWord }) => {
             Search
           </button>
         </form>
-        {error && <h4 className="text-red-600/75">Please type a word</h4>}
+        {error && <h4 className="text-red-700 font-extrabold">Please type a word!</h4>}
       </div>
     </div>
   );
