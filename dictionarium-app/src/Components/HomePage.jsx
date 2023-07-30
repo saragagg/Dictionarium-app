@@ -14,8 +14,8 @@ const HomePage = () => {
 
       <div className="my-11 drop-shadow-xl text-center text-blue-900">
         <h3>
-          <p className="text-3xl md:text-5xl ld:text-8xl font-extrabold ">
-            Introducing <i>Dictionarium</i>:
+          <p className="text-3xl md:text-5xl ld:text-8xl w-max font-extrabold overflow-hidden whitespace-nowrap animate-typing mx-auto border-r-4">
+            Introducing <span className="italic">Dictionarium</span>:
           </p>
           <p className="text-2xl md:text-4xl ld:text-7xl font-semibold underline">
             Your Ultimate Dictionary Website
