@@ -17,6 +17,11 @@ module.exports = {
         typing: "typing 3s steps(18) infinite alternate, blink 0.4s infinite",
       },
     },
+    screens: {
+      'sm': '576px',
+      'md': '1200px',
+      'lg': '1890px'
+    }
   },
   plugins: [],
 };

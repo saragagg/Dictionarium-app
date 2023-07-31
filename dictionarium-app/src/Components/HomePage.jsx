@@ -23,36 +23,39 @@ const HomePage = () => {
         </h3>
       </div>
 
-      <div className="bg-white mt-5 p-4 md:p-11 lg:p-22 drop-shadow-xl rounded-md">
-        <h4 className="font-sans text-base md:text-lg ld:text-xl">
-          Welcome to Dictionarium, the dynamic and comprehensive dictionary
-          website that is set to revolutionize the way you interact with words.
-          With its extensive word database, precise definitions, and innovative
-          features, Dictionarium empowers you to explore languages, expand your
-          vocabulary, and access accurate information anytime, anywhere.{" "}
-          <p className="mt-5">
-            Discover a World of Words: Dictionarium opens the doors to a vast
-            universe of words and their meanings.
-          </p>
-        </h4>
-      </div>
+      <div className="md:flex md:space-x-4 items-stretch">
+        <div className="bg-white mt-5 p-4 md:p-11 lg:p-22 drop-shadow-xl rounded-md basis-1/2">
+          <h4 className="font-sans text-base md:text-lg ld:text-xl">
+            Welcome to Dictionarium, the dynamic and comprehensive dictionary
+            website that is set to revolutionize the way you interact with
+            words. With its extensive word database, precise definitions, and
+            innovative features, Dictionarium empowers you to explore languages,
+            expand your vocabulary, and access accurate information anytime,
+            anywhere.
+            <p className="mt-5">
+              Discover a World of Words: Dictionarium opens the doors to a vast
+              universe of words and their meanings.
+            </p>
+          </h4>
+        </div>
 
-      <div className="bg-white mt-11 p-4 md:p-11 lg:p-22 drop-shadow-xl rounded-md">
-        <h4 className="font-sans text-base md:text-lg ld:text-xl">
-          Unparalleled Accuracy and Depth: When it comes to definitions,
-          synonyms, antonyms, and examples, Dictionarium strives for unrivaled
-          accuracy and depth. Our website draws from reputable sources and
-          linguistic experts to provide you with the most precise and up-to-date
-          information. We ensure that you grasp the full meaning and usage of
-          every word, enabling you to communicate effectively and confidently.
-          Dictionarium invites you to embark on a linguistic adventure like no
-          other.
-          <p className="mt-5">
-            Empower yourself with knowledge, communicate with precision, and let
-            Dictionarium be your trusted language companion on the exciting
-            journey of discovery and learning.
-          </p>
-        </h4>
+        <div className="bg-white mt-5 p-4 md:p-11 lg:p-22 drop-shadow-xl rounded-md basis-1/2">
+          <h4 className="font-sans text-base md:text-lg ld:text-xl">
+            Unparalleled Accuracy and Depth: When it comes to definitions,
+            synonyms, antonyms, and examples, Dictionarium strives for unrivaled
+            accuracy and depth. Our website draws from reputable sources and
+            linguistic experts to provide you with the most precise and
+            up-to-date information. We ensure that you grasp the full meaning
+            and usage of every word, enabling you to communicate effectively and
+            confidently. Dictionarium invites you to embark on a linguistic
+            adventure like no other.
+            <p className="mt-5">
+              Empower yourself with knowledge, communicate with precision, and
+              let Dictionarium be your trusted language companion on the
+              exciting journey of discovery and learning.
+            </p>
+          </h4>
+        </div>
       </div>
     </div>
   );
