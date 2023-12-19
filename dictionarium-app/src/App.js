@@ -1,20 +1,24 @@
-import Header from './Components/Header';
-import SearchBar from './Components/SearchBar';
-import HomePage from './Components/HomePage';
-import Word from './Components/Word';
-import { useState } from 'react';
+import Header from "./Components/Header";
+import SearchBar from "./Components/SearchBar";
+import HomePage from "./Components/HomePage";
+import Word from "./Components/Word";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
+  const [selectedWord, setSelectedWord] = useState("");
 
-  const [selectedWord, setSelectedWord] = useState("")
-  const [showWord, setShowWord] = useState(false)
-  
   return (
     <div className="bg-sky-50 h-full min-h-screen font-serif text-center ">
-        <Header />
-        <SearchBar selectedWord={selectedWord} setSelectedWord={setSelectedWord} setShowWord={setShowWord}/>
-        {!showWord && <HomePage />}
-        {showWord && <Word selectedWord={selectedWord}/>}
+      <Header />
+      <SearchBar
+        selectedWord={selectedWord}
+        setSelectedWord={setSelectedWord} 
+      />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/word" element={<Word selectedWord={selectedWord} />} />
+      </Routes>
     </div>
   );
 }
