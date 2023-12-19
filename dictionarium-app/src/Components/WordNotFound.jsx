@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const WordNotFound = () => {
   return (
     <div className="pt-5 pb-10 md:py-20 flex-col space-y-6">
@@ -23,24 +25,31 @@ const WordNotFound = () => {
           <p className="mt-5 md:mx-20 text-lg text-left">
             <ul>
               <li>
-                <span className="font-bold text-blue-900">Check your spelling:</span>
+                <span className="font-bold text-blue-900">
+                  Check your spelling:
+                </span>
                 Sometimes, a simple typo can lead to a word not being found.
                 Please double-check the spelling and try again.
               </li>
               <li>
-                <span className="font-bold text-blue-900">Use different word forms:</span> If
-                you were searching for a specific form of the word e.g., noun,
-                verb, adjective, try searching for the base form or vice versa.
+                <span className="font-bold text-blue-900">
+                  Use different word forms:
+                </span>{" "}
+                If you were searching for a specific form of the word e.g.,
+                noun, verb, adjective, try searching for the base form or vice
+                versa.
               </li>
               <li>
-                <span className="font-bold text-blue-900">Try a synonym:</span> If the word
-                you're looking for is not found, it might have synonyms that we
-                do have in our dictionary. Search for a similar word that
-                conveys the same meaning.
+                <span className="font-bold text-blue-900">Try a synonym:</span>{" "}
+                If the word you're looking for is not found, it might have
+                synonyms that we do have in our dictionary. Search for a similar
+                word that conveys the same meaning.
               </li>
               <li>
-                <span className="font-bold text-blue-900">Explore related terms:</span> The
-                word you're looking for could be part of a larger group of
+                <span className="font-bold text-blue-900">
+                  Explore related terms:
+                </span>{" "}
+                The word you're looking for could be part of a larger group of
                 related terms. Try searching for broader categories that might
                 include the word you need.
               </li>
@@ -54,9 +63,11 @@ const WordNotFound = () => {
               </li>
             </ul>
           </p>
-          <p className="mt-10 text-xl font-semibold italic text-blue-900 hover:underline">
-            Try your search again
-          </p>
+          <Link to="/">
+            <p className="mt-10 text-xl font-semibold italic text-blue-900 hover:underline">
+              Try your search again
+            </p>
+          </Link>
         </h4>
       </div>
     </div>

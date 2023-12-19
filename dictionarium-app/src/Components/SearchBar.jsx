@@ -1,18 +1,19 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const SearchBar = ({ setSelectedWord, setShowWord }) => {
+const SearchBar = ({ setSelectedWord }) => {
   const [error, setError] = useState(false);
   const [chosenWord, setChosenWord] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (chosenWord === "") {
       setError(true);
-      setShowWord(false);
     } else {
       setSelectedWord(chosenWord);
-      setShowWord(true);
       setError(false);
+      navigate("/word")
     }
   };
 
