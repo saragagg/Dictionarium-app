@@ -1,15 +1,11 @@
+import QuotesCarousel from "./QuotesCarousel";
+
+
 const HomePage = () => {
   return (
     <div className="pb-10 mx-1 md:mx-64 ld:mx-90">
       <div className="bg-white mt-11 p-4 md:p-11 lg:p-22 drop-shadow-xl rounded-md">
-        <h3 className="font-sans text-base md:text-lg ld:text-xl italic">
-          “Words are pale shadows of forgotten names. As names have power, words
-          have power. Words can light fires in the minds of men. Words can wring
-          tears from the hardest hearts.”
-          <p className="font-medium">
-            - Patrick Rothfuss, The Name of the Wind
-          </p>
-        </h3>
+        <QuotesCarousel />
       </div>
 
       <div className="my-11 drop-shadow-xl text-center text-blue-900">
